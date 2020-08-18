@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diabotical analog timer concept</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="clock">
+      <img id="arrows" src="arrows.png" alt="Arrows" class="animation" />
+    </div>
+
+    <div class="settings">
+      <p>Game starting in 3.. 2.. 1..</p>
+      <button onclick="countdown()">
+        Hit me on "3"
+      </button>
+
+      <br /><br />
+
+      <p>Set to <input id="seconds" type="number" value="0" />s</p>
+      <button onclick="settime()">Go</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
