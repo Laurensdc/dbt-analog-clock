@@ -58,6 +58,7 @@ body {
   animation-name: tick;
   animation-duration: 60s;
   animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes tick {
