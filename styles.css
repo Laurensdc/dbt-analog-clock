@@ -1,0 +1,77 @@
+/** reset **/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/** styles **/
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+#clock {
+  background-image: url('./bg.png');
+  background-size: 100%;
+  background-position: 0, 0;
+  width: 500px;
+  height: 500px;
+
+  position: relative;
+}
+
+#clock #arrows {
+  width: 500px;
+  height: 500px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#clock #arrows.animation {
+  animation-name: tick;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes tick {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+input[type='number'] {
+  width: 3rem;
+}
+
+.settings {
+  position: relative;
+  z-index: 100;
+}
